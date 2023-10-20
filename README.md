@@ -7,7 +7,7 @@
 ## Vorbereitung für VSCODE
 
 * Entweder kopieren Sie alle Ordner und Dateien des Repos in Ihren neuen Python-Projekt Ordner (ggf. erst herunterladen)
-  * https://github.com/rw-haw/23W-AINF-3a/archive/refs/heads/main.zip
+  * https://github.com/rw-haw/empty-python-vscode/archive/refs/heads/main.zip
 * oder Sie clonen das Repo mit git und löschen danach die Repo-Informationen
   * Bash-Variante mit SSH-Authentifizierung
   ```Bash
