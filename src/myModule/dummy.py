@@ -1,2 +1,2 @@
 def dummy_method():
-    pass
+    print("Hallo Welt!")
