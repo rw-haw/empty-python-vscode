@@ -39,15 +39,15 @@
   ```PowerShell
   C:\Python311\python.exe -m venv ENV
   ```
-  ![](ENV_01.png)
+  ![](./docs/ENV_01.png)
 
 * Öffnen Sie `dummy.py` im Editor
   
-  ![](ENV_02.png)
+  ![](./docs/ENV_02.png)
 
   * ENV sollte jetzt in der Powershell erkannt werden. Machen Sie ein Relaunch der Powershell oder schließen Sie das Terminal und öffnen ein neues
   
-    ![](ENV_03.png)
+    ![](./docs/ENV_03.png)
 
   * Verifizieren Sie die ENV im Terminal
 
@@ -56,7 +56,7 @@
     ```
     Dies sollte den Pfad zu der ENV-Umgebung enthalten.
 
-    ![](ENV_05.png)
+    ![](./docs/ENV_05.png)
 
   * Installieren Sie benötigte Python-Pakete in der Umgebung über das Terminal mit dem Paketmanager *pip*
 
@@ -77,7 +77,7 @@
 * Öffnen Sie `dummy.py` im Editor
 * Selektieren Sie ENV, falls noch nicht automatisch erkannt
 
-  ![](ENV_04.png)
+  ![](./docs/ENV_04.png)
 
 * Definieren Sie den Ordner *src* als Basis Ordner Ihrer Module, indem Sie *RENAMEMETO.env* umbenennen in *.env* oder verschieben Sie die Datei mit
 
@@ -86,28 +86,28 @@
   ```
   In der Datei `dummy.py` sollten jetzt das Modul `myModule` auch erkannt werden.
 
-  ![](ENV_06.png)
+  ![](./docs/ENV_06.png)
 
 ### Python Unit-Testing mit pytest
 
 * Wechseln Sie zum Unit-Test Menü von VSCODE (Reagenzglas)
 
-  ![](unit-tests_01.png)
+  ![](./docs/unit-tests_01.png)
 
 * Wählen Sie *Configure Python Tests* aus und wählen Sie dann pytest als Framework aus
 
-  ![](unit-tests_02.png)
+  ![](./docs/unit-tests_02.png)
 
 Und wählen Sie das *root*-directory aus
 
 * Verifizieren Sie, dass es keine Fehler bei der Suche nach Tests gibt:
 
-  ![](unit-tests_03.png)
+  ![](./docs/unit-tests_03.png)
 
   * Starten Sie einen Test mittels *Play*-Button
 
-    ![](unit-tests_04.png)
-    ![](unit-tests_05.png)
+    ![](./docs/unit-tests_04.png)
+    ![](./docs/unit-tests_05.png)
 
     Grüne Haken zeigen an, dass der Test ohne Fehler ausgeführt wurde.
   
@@ -115,47 +115,49 @@ Und wählen Sie das *root*-directory aus
 
 * Wechseln Sie zum Debug-Menü
   
-  ![](debug_01.png)
+  ![](./docs/debug_01.png)
 
 * Wählen Sie *create a launch.json file* und selektieren Sie *Python File*
   
-  ![](debug_02.png)
+  ![](./docs/debug_02.png)
 
 * Wechseln Sie auf `dummy.py`, setzen Sie einen Breakpoint und starten Sie den Debugger mit dem *Play*-Button
 
-  ![](debug_03.png)
+  ![](./docs/debug_03.png)
 * Es sollte nun möglich sein, Ihr Skript zu debuggen
   
-  ![](debug_04.png)
+  ![](./docs/debug_04.png)
 
   * Es sollte möglich sein in die Funktion `dummy_method` (im Ordner src) hinein zu wechseln:
 
-    ![](debug_05.png)
+    ![](./docs/debug_05.png)
 
 ### ENV in interaktiven Python-Skripten und Konsolen
 
 * Öffnen Sie `dummy_interactive.py` und führen Sie die erste Cell aus
 
-  ![](interactive_01.png)
+  ![](./docs/interactive_01.png)
 
 * ENV sollte automatisch erkannt werden. Installieren Sie das *ipykernel* Paket
 
-  ![](interactive_02.png)
+  ![](./docs/interactive_02.png)
 
 ### ENV in Jupyter-Notebook-Dateien
 
 * Öffnen Sie `dummy.ipynb` und wählen Sie den richtigen Kernel aus
 
-  ![](ipynb_01.png)
+  ![](./docs/ipynb_01.png)
 
 * Wählen Sie *Python Environments* und selektieren Sie ENV aus der Liste
 
-  ![](ipynb_02.png)
-  ![](ipynb_03.png)
+  ![](./docs/ipynb_02.png)
+  ![](./docs/ipynb_03.png)
 
 * Verifizieren Sie ENV indem Sie die Cell fehlerfrei ausführen lassen
-  ![](ipynb_04.png)
+  ![](./docs/ipynb_04.png)
 
 
+## Clean-Up
 
+* Passen Sie die README.md für Ihr Projekt and und löschen Sie den Ordner docs mit den Screenshots für diese README.
 
