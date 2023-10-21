@@ -181,8 +181,10 @@ Und wählen Sie das *root*-directory aus
   ```
   ![](./docs/install_myModule_01.png)
 
-* Aktivieren der ENV und installa
+**Hinweise:**
 
-# Weiterführende Informationen
+* Informationen zu Autor*innen und Lizenzen sollten vor einer Verbreitung entsprechend angepasst werden.
+
+# Weiterführende Informationen und Hinweise
 
 * Das src-Layout ist nicht-flach. Mehr Informationen dazu [https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/)
