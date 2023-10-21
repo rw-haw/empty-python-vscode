@@ -157,7 +157,32 @@ Und wählen Sie das *root*-directory aus
   ![](./docs/ipynb_04.png)
 
 
-## Clean-Up
+# Clean-Up
 
-* Passen Sie die README.md für Ihr Projekt and und löschen Sie den Ordner docs mit den Screenshots für diese README.
+* Passen Sie die README.md für Ihr Projekt and und löschen Sie den Ordner **docs** mit den Screenshots für diese README.
 
+# Installation des Moduls
+
+* Dieses Dummy-Repository ist darauf ausgelegt, dass man die in *src* liegenden Module (z.B. `myModule`) mittels pip auch installieren kann.
+
+## Lokale Installation in eine neue ENV
+
+* Erstellen einer ENV
+* Aktivieren der ENV
+* Installation von *meinProjekt*-Modulen
+  * `pip install -e` installiert im Developer*in-Modus, d.h. die Module können am Ursprungsort noch nachträglich verändert werden.
+* Testen des `myModule`
+    
+  ```PowerShell
+  C:\Python311\python.exe -m venv ENV
+  .\ENV\Scripts\Activate.ps1
+  python -m pip install -e ..\meinProjekt\
+  python -c "import myModule.dummy as d; d.dummy_method()"
+  ```
+  ![](./docs/install_myModule_01.png)
+
+* Aktivieren der ENV und installa
+
+# Weiterführende Informationen
+
+* Das src-Layout ist nicht-flach. Mehr Informationen dazu [https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/)
