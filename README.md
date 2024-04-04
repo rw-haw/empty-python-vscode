@@ -15,7 +15,7 @@
   cd meinProjekt # Wechseln in den Repo Ordner
   rm -rf .git # löscht vorhandenen GIT-conntent
   ```
-  * Bash-Variante mit SSH-Authentifizierung
+  * Bash-Variante mit Web-Authentifizierung
   ```Bash
   git clone https://github.com/rw-haw/empty-python-vscode.git meinProjekt # Clone des Repos wird im Ordner <meinProjekt> erzeugt
   cd meinProjekt # Wechseln in den Repo Ordner
