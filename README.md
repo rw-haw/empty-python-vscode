@@ -4,8 +4,33 @@
 
 # Anleitung
 
+## Prerequisites Windows
+
+* Das Aktivieren von virtuellen Python-Umgebungen und ausführen von Powershell-Skripten muss einmalig aktiviert werden
+* Öffnen eine Powershell, führen Sie folgenden Befehl aus und bestätigen Sie mit *J*:
+  ```Powershell
+    # Ausführen in Powershell
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    # Bestätigen mit "J"
+  ```
+
 ## Vorbereitung für VSCODE
 
+### Vorbereitung per Skript
+
+* Erstellen Sie Ihren Projekt-Ordner und wechseln Sie dahin mit einer Powershell (Windows) oder Terminal/Bash (MacOS/ Linux) und kopieren Sie dahin die Dateien `setup-project-root.ps1` (Windows) `setup-project-root.sh` (MacOS/ Linux)
+* Führen Sie das entsprechende Skript aus
+  * Windows
+  ```Powershell
+    # Ausführen in Powershell
+    ./setup-project-root.ps1
+  ```
+  * Terminal/Bash
+  ```bash
+    # Execute in Terminal
+    ./setup-project-root.sh
+  ```
+### Manuelle Vorbereitung
 * Entweder kopieren Sie alle Ordner und Dateien des Repos in Ihren neuen Python-Projekt Ordner (ggf. erst herunterladen)
   * https://github.com/rw-haw/empty-python-vscode/archive/refs/heads/main.zip
 * oder Sie clonen das Repo mit git und löschen danach die Repo-Informationen
