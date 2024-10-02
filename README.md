@@ -86,13 +86,15 @@
   * Installieren Sie benötigte Python-Pakete in der Umgebung über das Terminal mit dem Paketmanager *pip*
 
     ```PowerShell
-    python -m pip install pytest numpy matplotlib scipy scikit-image
+    # pytest
+    python -m pip install pytest
     ```
 
   * Für Matplotlib-Arbeiten mit dem PyQt-Backend installieren Sie ebenfalls PyQt5 oder PyQt6
 
     ```PowerShell
-    python -m pip install PyQt6
+    # Optional für Anwendungen mit Matplotlib
+    python -m pip install matplotlib pyqt5
     ```
 
     * Ggf. benötigen Sie weitere build-Tools. Beachten Sie Hiweise in der Ausgabe bei gescheiterten Installationen des Pakets
