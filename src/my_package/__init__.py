@@ -1,0 +1,1 @@
+from .dummy_module import dummy_method
