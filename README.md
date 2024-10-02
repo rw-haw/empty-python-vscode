@@ -6,7 +6,7 @@
 
 ## Prerequisites Windows
 
-* Das Aktivieren von virtuellen Python-Umgebungen und ausführen von Powershell-Skripten muss einmalig aktiviert werden
+* Das Aktivieren von virtuellen Python-Umgebungen und Ausführen von Powershell-Skripten muss einmalig aktiviert werden
 * Öffnen eine Powershell, führen Sie folgenden Befehl aus und bestätigen Sie mit *J*:
   ```Powershell
     # Ausführen in Powershell
