@@ -137,7 +137,26 @@ Und wählen Sie das *root*-directory aus
     ![](./docs/unit-tests_05.png)
 
     Grüne Haken zeigen an, dass der Test ohne Fehler ausgeführt wurde.
+#### Probleme
+
+* pytest import-Fehler - Paket mit Modul in src können nicht gefunden werden
   
+  * Mac/ Linux: Verwendung absoluter Pfade in .env-Datei kann helfen; ggf. Umgebungvariable `PYTHONPATH` bereits in der eigenen `.bashrc`
+
+  * ggf. cache-Dateien löschen
+
+    * `.pytest_cache`-Ordner
+  
+  * ggf. python.testing settings aus der `.vscode/settings.json` löschen
+
+  * ggf. Neustart von VSCODE, insbesondere, wenn Umgebungsvariablen angepasst wurden in .bashrc oder in .env
+
+Weitere Ansätze:
+
+* https://pytest-with-eric.com/
+
+* https://pytest-with-eric.com/introduction/pytest-pythonpath/
+
 ### Run-And-Debug Python-Dateien mit VSCODE einrichten
 
 * Wechseln Sie zum Debug-Menü
