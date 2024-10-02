@@ -1,6 +1,6 @@
 # Einleitung
 
-* Dieses Repo dient zum schnellen einrichten eines Python-Repositories mit VSCODE mit src-Ordnerstruktur
+* Dieses Repo dient zum schnellen Einrichten eines Python-Repositories mit VSCODE mit src-Ordnerstruktur und pytest unit-Testing
 
 # Anleitung
 
