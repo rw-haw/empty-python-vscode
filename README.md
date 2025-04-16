@@ -55,15 +55,23 @@
 
 * Ggf. zunächst Python Extensions installieren, z.B. *Python Extension Pack*
 
-#### Powershell
+#### Terminal
 
 * Bestimmen Sie den absoluten Pfad zu Ihrer Python-Executable, z.B. C:\Python311\python.exe
 
+  * Mac/ Linux: `python3`
+
 * Öffnen Sie ein Powershell Terminal in VSCODE und führen Sie folgende Befehle aus (Python Pfad ggf. anpassen)
 
-  ```PowerShell
-  C:\Python311\python.exe -m venv ENV
-  ```
+  * Windows
+    ```PowerShell
+    C:\Python311\python.exe -m venv ENV
+    ```
+  * Mac/ Linux
+    ```PowerShell
+    python3 -m venv ENV
+    ```
+
   ![](./docs/ENV_01.png)
 
 * Öffnen Sie `dummy.py` im Editor
@@ -111,6 +119,26 @@
   ```PowerShell
   mv .\RENAMETO.env .env
   ```
+
+  * Mac/ Linux: 
+    * Die .env Datei sollte `PYTHONPATH=src` enthalten oder den absoluten Pfad zu src: `PYTHONPATH=/.../src` ('...' entsprechend anpassen)
+    * Zusätzlich erstellen Sie im Projektordner einen Ordner `.vscode` und darin eine Datei `settings.json` mit folgendem Inhalt:
+    
+      ```bash
+      {
+      "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${workspaceFolder}/src",
+      },
+      "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}/src",
+      },
+      "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder}/src",
+      },
+      "python.envFile": "${workspaceFolder}/.env"
+      }
+      ```
+
   In der Datei `dummy.py` sollten jetzt das Modul `myModule` auch erkannt werden.
 
   ![](./docs/ENV_06.png)
@@ -225,6 +253,16 @@ Weitere Ansätze:
   python -m pip install -e ..\meinProjekt\
   python -c "import myModule.dummy as d; d.dummy_method()"
   ```
+
+  * Mac/ Linux:
+
+  ```bash
+  python3 -m venv ENV
+  source ./ENV/bin/activate
+  python -m pip install -e ..\meinProjekt\
+  python -c "import myModule.dummy as d; d.dummy_method()"
+  ```
+
   ![](./docs/install_myModule_01.png)
 
 **Hinweise:**
