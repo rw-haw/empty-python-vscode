@@ -237,21 +237,21 @@ Weitere Ansätze:
 
 # Installation des Moduls
 
-* Dieses Dummy-Repository ist darauf ausgelegt, dass man die in *src* liegenden Module (z.B. `myModule`) mittels pip auch installieren kann.
+* Dieses Dummy-Repository ist darauf ausgelegt, dass man die in *src* liegenden Module (z.B. `my_package`) mittels pip auch installieren kann.
 
 ## Lokale Installation in eine neue ENV
 
 * Erstellen einer ENV
 * Aktivieren der ENV
-* Installation von *meinProjekt*-Modulen
-  * `pip install -e` installiert im Developer*in-Modus, d.h. die Module können am Ursprungsort noch nachträglich verändert werden.
-* Testen des `myModule`
+* Installation von *meinProjekt*-Paketen
+  * `pip install -e` installiert im Developer*in-Modus, d.h. die Module können am Ursprungsort noch nachträglich verändert werden. Ist der Developer*in-Modus nicht gewünscht, dann die Option `-e` einfach weglassen.
+* Testen des `my_package`
     
   ```PowerShell
   C:\Python311\python.exe -m venv ENV
   .\ENV\Scripts\Activate.ps1
   python -m pip install -e ..\meinProjekt\
-  python -c "import myModule.dummy as d; d.dummy_method()"
+  python -c "import my_package.dummy_module as d; d.dummy_method()"
   ```
 
   * Mac/ Linux:
@@ -260,7 +260,7 @@ Weitere Ansätze:
   python3 -m venv ENV
   source ./ENV/bin/activate
   python -m pip install -e ..\meinProjekt\
-  python -c "import myModule.dummy as d; d.dummy_method()"
+  python -c "import my_package.dummy_module as d; d.dummy_method()"
   ```
 
   ![](./docs/install_myModule_01.png)
