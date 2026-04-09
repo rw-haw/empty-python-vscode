@@ -114,10 +114,10 @@
 
   ![](./docs/ENV_04.png)
 
-* Definieren Sie den Ordner *src* als Basis Ordner Ihrer Module, indem Sie *RENAMEMETO.env* umbenennen in *.env* oder verschieben Sie die Datei mit
+* Definieren Sie den Ordner *src* als Basis Ordner Ihrer Module, indem Sie *RENAMEMETO.env* kopieren nach *.env* 
 
   ```PowerShell
-  mv .\RENAMETO.env .env
+  cp .\RENAMETO.env .env
   ```
 
   * Mac/ Linux: 
