@@ -53,7 +53,11 @@
 
 ### Aufsetzen einer virtuellen Umgebung
 
-* Ggf. zunächst Python Extensions installieren, z.B. *Python Extension Pack*
+* Ggf. zunächst Python Extensions installieren, z.B. 
+  * *Python (Microsoft)*
+  * *Python Environments (Microsoft)*
+  * *Pylance (Microsoft)*
+  * *Jupyter (Microsoft)* für Jupyter notebook support
 
 #### Terminal
 
